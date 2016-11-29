@@ -1,18 +1,14 @@
 <div class="row">
   <h1>Settings</h1>
   <table class="table table-hover table-inverse">
-    <thead>
-      <tr>
-        <th>New Color</th>
-      </tr>
-  </thead>
     <tbody id="container">
-      <form id="color-form" ng-submit="">
+      <form id="color-form">
         <div class="form-group">
           <label for="add_color">New Color:</label>
-          <input type="text" id="add_color" ng-model="colors.colors" ng-style="{background: color}" name="add_color" class="form-control" placeholder="Add Color" />
+          <input type="text" id="add_color" ng-model="settings.newColor" ng-style="{background: color}" name="add_color" class="form-control" placeholder="Add Color" />
         </div>
-        <button> Add Color </button>
+        <button id="color-submit" ng-click="settings.pushColorMaDoooods()"> Add Color </button>
+      </form>
     </tbody>
   </table>
 </div>
