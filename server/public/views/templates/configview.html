@@ -1,5 +1,18 @@
 <div class="row">
   <h1>Settings</h1>
-
-  To Do: UI to add colors to the game.
+  <table class="table table-hover table-inverse">
+    <thead>
+      <tr>
+        <th>New Color</th>
+      </tr>
+  </thead>
+    <tbody id="container">
+      <form id="color-form" ng-submit="">
+        <div class="form-group">
+          <label for="add_color">New Color:</label>
+          <input type="text" id="add_color" ng-model="colors.colors" ng-style="{background: color}" name="add_color" class="form-control" placeholder="Add Color" />
+        </div>
+        <button> Add Color </button>
+    </tbody>
+  </table>
 </div>
